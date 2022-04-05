@@ -5,10 +5,14 @@ package cat.uvic.teknos.m06.fileutils;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.io.File;
+
 
 class FileUtilsTest {
-    @Test void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+    @Test
+    void GivenValidPathWhenidValidThenTrue() {
+        assertTrue(FileUtils.isValidDirectory("C:\\Users\\10034356\\source\\repos\\fileutils\\FileUtils\\lib\\src\\main\\resources"));
     }
 }
+
+
